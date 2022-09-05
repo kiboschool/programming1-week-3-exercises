@@ -22,26 +22,26 @@ Here are the basic steps:
 
 Try playing your Rock, Paper, Scissors game, and make sure that it works for all the different inputs. There are a lot of `if` statements to write.
 
+- Use `random` to randomize the computer choice. The computer player should choose randomly between Rock, Paper, and Scissors.
+
 **Be aware**: the user might not type in exactly “Rock” “Paper” or “Scissors”. Your code should handle that case nicely, and should not error.
 
 **Sample Runs**
 
-![loss with scissors](assets/16BF5CF2-9D49-4E67-8509-31C57D7067EA-2037-00027F9983AC9F09.png)
+![loss with scissors](assets/loss-with-scissors.png)
 
-![victory with rock](assets/7F714F44-419A-47C3-9E07-20E5C185C51F-2037-00027F9AFF0B82E8.png)
+![victory with rock](assets/victory-with-rock.png)
 
-![draw with rock](assets/D741C704-CECD-4FD8-B07A-CEB6598984F5-2037-00027F9A455E10C6.png)
+![draw with rock](assets/draw-with-rock.png)
 
-![invalid input](assets/F8828E99-37DB-481E-9251-39D833020B3D-2037-00027F985B0C720F.png)
+![invalid input](assets/invalid-input.png)
 
-- Use `random` to randomize the computer choice. The computer player should choose randomly between Rock, Paper, and Scissors.
 
-### Test and Submit
-Once you finish coding the section above, you should:
+### Testing 
 
-1. Play your game, and make sure that it’s working for all the different inputs. It’s not fun if the conditionals don’t work, because it feels like the game is broken.
+Play your game, and make sure that it’s working for all the different inputs. It’s not fun if the conditionals don’t work, because it feels like the game is broken.
 
-2. Click “Submit”
+There are no automated tests for this assignment, so be careful in your testing.
 
 ## Rubric
 
@@ -54,7 +54,6 @@ There aren't any test cases for this assignment. Instead, you'll have to check t
 If you checked off all these boxes, your Rock, Paper, Scissors game is up to scratch!
 
 If it doesn't meet these criteria, keep trying, and remember that you can ask for help. You should submit your work for feedback, whether or not you have checked off everything on this checklist.
-
 
 ## Remember...
 
