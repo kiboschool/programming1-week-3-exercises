@@ -25,6 +25,8 @@ Here are two example for a run. The first one is failure case while the second i
 ## Successful Validation Case
 ![image](assets/success_case.PNG)
 
+## Starter Code
+Check the file called `validator.py`, and start writing your code there.
 
 ## Bonus Task
 Add the condition where the password needs to have at least 3 numbers.
