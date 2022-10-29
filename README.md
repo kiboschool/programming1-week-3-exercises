@@ -29,11 +29,11 @@ The special characters for this project are: **&, #, $, !, ?, ", (, )**
 
 Failed Validation:
 
-![image](assets/failure_case.PNG)
+![image](assets/failure_case.png)
 
 Successful Validation:
 
-![image](assets/success_case.PNG)
+![image](assets/success_case.png)
 
 ## Starter Code
 
