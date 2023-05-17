@@ -9,11 +9,25 @@ The program should start by asking the user to enter a password with these crite
 
 - Length must be between 9 and 12 characters
 - At least 3 special characters
-- At least 5 alphabetic characters 
+- At least 5 alphabetic characters
+- At least 3 numeric characters
 
 You may then use a loop to check password characters one at a time. 
 
 The special characters for this project are: **&, #, $, !, ?, ", (, )**
+
+Your validation messages should be:
+
+* Successful validation
+  > Validation Succeeded!
+* Unsuccessful validation
+  > Validation Failed: Password length should be between 9 and 12
+  
+  > Validation Failed: You need to have a minimum of 3 special characters
+  
+  > Validation Failed: You need to have a minimum of 5 alpha characters
+  
+  > Validation Failed: You need to have a minimum of 3 digits
 
 ## Hints
 
@@ -29,16 +43,13 @@ The special characters for this project are: **&, #, $, !, ?, ", (, )**
 
 Failed Validation:
 
-![image](assets/failure_case.PNG)
+![image](assets/failure_case.png)
 
 Successful Validation:
 
-![image](assets/success_case.PNG)
+![image](assets/success_case.png)
 
 ## Starter Code
 
 Check the file called `validator.py`, and start writing your code there.
 
-## Bonus Task
-
-Add the condition where the password needs to have at least 3 numbers.
