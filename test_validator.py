@@ -32,8 +32,8 @@ class TestValidator(unittest.TestCase):
         self.check_password("pass123!#$#", "Validation Failed: You need to have a minimum of 5 alpha characters")
     
     def test_password_numbers(self, mock_exit):
-        self.check_password("pasuwop12!#$", "Validation Failed: You need to have a minimum of 3 numbers")
-        self.check_password("Yus?1''$&qa", "Validation Failed: You need to have a minimum of 3 numbers")
+        self.check_password("pasuwop12!#$", "Validation Failed: You need to have a minimum of 3 digits")
+        self.check_password("Yus?1''$&qa", "Validation Failed: You need to have a minimum of 3 digits")
     
 
 if __name__ == '__main__':
