@@ -46,7 +46,7 @@ if not alpha_chars_count >= needed_alpha_chars:
     exit(0)
 
 if not numbers_count >= needed_number_count:
-    print(f"Validation Failed: You need to have a minimum of {needed_number_count} numbers")
+    print(f"Validation Failed: You need to have a minimum of {needed_number_count} digits")
     exit(0)
 
 print("Validation Succeeded!")
