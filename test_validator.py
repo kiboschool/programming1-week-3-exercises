@@ -2,6 +2,8 @@ from unittest.mock import patch
 import unittest
 import sys
 
+from gradescope_utils.autograder_utils.decorators import weight
+
 @patch('builtins.exit')
 class TestValidator(unittest.TestCase):
     @patch('builtins.print')
@@ -15,22 +17,27 @@ class TestValidator(unittest.TestCase):
             sys.modules.pop('validator')
             patcher.stop()
 
+    @weight(1)
     def test_password_happy_flow(self, mock_exit):
         self.check_password("pasuwo12!#$3", "Validation Succeeded!")
         self.check_password("baume763!!!", "Validation Succeeded!")
-        
+
+    @weight(1)
     def test_password_length(self, mock_exit):
         self.check_password("pass", "Validation Failed: Password length should be between 9 and 12")
         self.check_password("check", "Validation Failed: Password length should be between 9 and 12")
         self.check_password("Yus?1'", "Validation Failed: Password length should be between 9 and 12")
     
+    @weight(1)
     def test_password_special_chars(self, mock_exit):
         self.check_password("passwo1235",  "Validation Failed: You need to have a minimum of 3 special characters")
         self.check_password("Yus?1ad''31",  "Validation Failed: You need to have a minimum of 3 special characters")
 
+    @weight(0.5)
     def test_password_alpha_chars(self, mock_exit):
         self.check_password("pass123!#$#", "Validation Failed: You need to have a minimum of 5 alpha characters")
     
+    @weight(0.5)
     def test_password_numbers(self, mock_exit):
         self.check_password("pasuwop12!#$", "Validation Failed: You need to have a minimum of 3 digits")
         self.check_password("Yus?1''$&qa", "Validation Failed: You need to have a minimum of 3 digits")
