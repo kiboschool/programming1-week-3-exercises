@@ -8,7 +8,7 @@ from gradescope_utils.autograder_utils.decorators import weight
 class TestValidator(unittest.TestCase):
     @patch('builtins.print')
     def check_password(self, password, expected_output, mock_print):
-        patcher = patch('builtins.input', return_value=[password])
+        patcher = patch('builtins.input', return_value=password)
         patcher.start()
         import validator
         try:
