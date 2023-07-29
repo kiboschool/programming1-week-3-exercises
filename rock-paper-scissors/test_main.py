@@ -35,11 +35,11 @@ class Test(TestCase):
 
         for var, expected_words in expected_results:
             for word in expected_words:
-                self.assertTrue(word in var)
+                self.assertTrue(word in var, msg=f"\"{word}\" not in \"{var}\"")
 
         for var, unexpected_words in not_expected:
             for word in unexpected_words:
-                self.assertFalse(word in var)
+                self.assertFalse(word in var, msg=f"\"{word}\" unexpectedly in \"{var}\"")
 
     @patch('builtins.input', return_value="Scissors")
     @weight(1)
@@ -69,11 +69,11 @@ class Test(TestCase):
 
         for var, expected_words in expected_results:
             for word in expected_words:
-                self.assertTrue(word in var)
+                self.assertTrue(word in var, msg=f"\"{word}\" not in \"{var}\"")
 
         for var, unexpected_words in not_expected:
             for word in unexpected_words:
-                self.assertFalse(word in var)
+                self.assertFalse(word in var, msg=f"\"{word}\" unexpectedly in \"{var}\"")
 
     @patch('builtins.input', return_value="Scissors")
     @weight(1)
@@ -103,11 +103,11 @@ class Test(TestCase):
 
         for var, expected_words in expected_results:
             for word in expected_words:
-                self.assertTrue(word in var)
+                self.assertTrue(word in var, msg=f"\"{word}\" not in \"{var}\"")
 
         for var, unexpected_words in not_expected:
             for word in unexpected_words:
-                self.assertFalse(word in var)
+                self.assertFalse(word in var, msg=f"\"{word}\" unexpectedly in \"{var}\"")
 
 if __name__ == '__main__':
     unittest.main()
