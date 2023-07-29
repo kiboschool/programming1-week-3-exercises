@@ -19,7 +19,8 @@ class Test(TestCase):
                 sys.modules.pop('main')
         computer_choice = lines[1].lower()
         result = lines[2].lower()
-        print(lines)
+        print(f"Read in computer choice: \"{computer_choice}\"")       
+        print(f"Read in result: \"{result}\"")
 
         expected_results = [
             # (var, contains_each_of_these)
@@ -53,7 +54,8 @@ class Test(TestCase):
                 sys.modules.pop('main')
         computer_choice = lines[1].lower()
         result = lines[2].lower()
-        print(lines)
+        print(f"Read in computer choice: \"{computer_choice}\"")       
+        print(f"Read in result: \"{result}\"")
 
         expected_results = [
             # (var, contains_each_of_these)
@@ -87,7 +89,8 @@ class Test(TestCase):
                 sys.modules.pop('main')
         computer_choice = lines[1].lower()
         result = lines[2].lower()
-        print(lines)
+        print(f"Read in computer choice: \"{computer_choice}\"")       
+        print(f"Read in result: \"{result}\"")
 
         expected_results = [
             # (var, contains_each_of_these)
